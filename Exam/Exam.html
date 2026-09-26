@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <button class="close" type="button">×</button>
+      <h1>สมัคร</h1>
+      <p class="subtitle">ง่ายและเร็ว</p>
+
+      <form>
+        <div class="name-row">
+          <input type="text" placeholder="ชื่อ" />
+          <input type="text" placeholder="นามสกุล" />
+        </div>
+        <input type="text" placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล" />
+        <input type="password" placeholder="รหัสผ่านใหม่" />
+
+        <fieldset>
+          <legend>วันเกิด</legend>
+          <div class="select-row">
+            <select><option>14</option></select>
+            <select><option>ก.ย.</option></select>
+            <select><option>2020</option></select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>เพศ</legend>
+          <div class="gender-row">
+            <label>หญิง <input type="radio" name="gender" /></label>
+            <label>ชาย <input type="radio" name="gender" /></label>
+          </div>
+        </fieldset>
+
+        <p class="terms">เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุกกี้ของเรา คุณอาจได้รับการแจ้งเตือนทาง SMS จากเรา และสามารถเลือกไม่รับได้ในภายหลัง</p>
+        <button class="submit" type="submit">สมัคร</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
