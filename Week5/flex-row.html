@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Row</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin: 20px 0 12px;
+            font-size: 1.2rem;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            background: #f0f0f0;
+            padding: 15px;
+            border: 2px solid #ccc;
+            height: 150px;
+            box-sizing: border-box;
+        }
+
+        .item {
+            background: navy;
+            color: white;
+            font-size: 20px;
+            width: 80px;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 4px;
+        }
+
+        .stretch .item {
+            background: teal;
+        }
+    </style>
+</head>
+<body>
+    <h2>1) justify-content: center</h2>
+    <div class="flexbox" style="justify-content: center;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>2) justify-content: space-between</h2>
+    <div class="flexbox" style="justify-content: space-between;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>3) align-items: center (จัดตรงกลางแนวตั้ง)</h2>
+    <div class="flexbox" style="align-items: center;">
+        <div class="item" style="height: 40px;">1</div>
+        <div class="item" style="height: 80px;">2</div>
+        <div class="item" style="height: 60px;">3</div>
+    </div>
+
+    <h2>4) align-items: stretch (ลูกถูกยืดให้เท่ากัน)</h2>
+    <div class="flexbox stretch" style="align-items: stretch;">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>

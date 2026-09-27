@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Column</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin: 20px 0 12px;
+            font-size: 1.2rem;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 320px;
+            height: 220px;
+            padding: 15px;
+            background: #f0f0f0;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .item {
+            background: navy;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .stretch .item {
+            background: teal;
+        }
+    </style>
+</head>
+<body>
+    <h2>1) justify-content: center (จัดลูกให้อยู่กลาง "แนวตั้ง")</h2>
+    <div class="flexbox" style="justify-content: center;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>2) justify-content: space-between (กระจายบน-ล่าง)</h2>
+    <div class="flexbox" style="justify-content: space-between;">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <h2>3) align-items: center (ลูกอยู่กึ่งกลาง "แนวนอน")</h2>
+    <div class="flexbox" style="align-items: center;">
+        <div class="item" style="width: 60px;">X</div>
+        <div class="item" style="width: 80px;">Y</div>
+        <div class="item" style="width: 40px;">Z</div>
+    </div>
+
+    <h2>4) align-items: stretch (ลูกถูกยึดเต็มความกว้างแนวนอน)</h2>
+    <div class="flexbox stretch" style="align-items: stretch;">
+        <div class="item">One</div>
+        <div class="item">Two</div>
+        <div class="item">Three</div>
+    </div>
+</body>
+</html>
